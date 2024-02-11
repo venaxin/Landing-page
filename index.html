@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthAI Connect</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>HealthAI Connect</h1>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Revolutionizing Healthcare with Artificial Intelligence</h2>
+        <p>
+          HealthAI Connect utilizes AI technology to provide personalized
+          guidance and predictions for various health issues.
+        </p>
+      </div>
+
+      <div class="advantages" id="advantages">
+        <div class="advantage">
+          <h3>Personalized Guidance</h3>
+          <p>
+            Get tailored advice for specific health concerns based on symptoms
+            or health descriptions.
+          </p>
+        </div>
+        <div class="advantage">
+          <h3>Online Doctor Consultation</h3>
+          <p>
+            Connect with healthcare professionals through web chat for
+            convenient consultations.
+          </p>
+        </div>
+        <div class="advantage">
+          <h3>Early Disease Detection</h3>
+          <p>
+            Utilize advanced technology to spot fatal diseases like brain tumors
+            and pneumonia early for timely intervention.
+          </p>
+        </div>
+      </div>
+      <a href="#features" class="btn">Discover More</a>
+    </section>
+    <section class="features" id="features">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <div class="flex-item description">
+            <h2>Health Condition Description based Disease Predictor</h2>
+            <p>
+              The Disease Predictor, which relies on advanced techniques to
+              analyze text data for predicting diseases based on health
+              condition descriptions, employs a combination of Count Vectorizer
+              and TF-IDF. These methods transform the free-form descriptions
+              into numerical representations, making them interpretable for
+              machine learning models.
+            </p>
+          </div>
+          <img
+            class="flex-item"
+            src="/static/images/desc.jpeg"
+            alt="description
+          predictor"
+          />
+        </div>
+        <div class="carousel-slide">
+          <div class="flex-item description">
+            <h2>Symptoms based Disease Predictor</h2>
+            <p>
+              The Symptoms-based Disease Predictor is an invaluable part of
+              HealthAI Connect, designed to predict diseases based on a set of
+              symptoms provided by the user. This feature stands out for its
+              remarkable ability to detect up to 41 different diseases using a
+              total of 132 symptoms. It achieves this using two popular machine
+              learning algorithms: Decision Tree and Random Forest. These
+              algorithms have shown exceptional accuracy and efficacy in
+              predicting diseases.
+            </p>
+          </div>
+          <img
+            class="flex-item"
+            src="/static/images/symptom.jpeg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="carousel-slide">
+          <div class="flex-item description">
+            <h2>NLP-Driven Medical Chatbot</h2>
+            <p>
+              The NLP-driven Medical Chatbot is an innovative feature of
+              HealthAI Connect, designed to offer users precise and concise
+              answers to their medical queries. This chatbot utilizes the power
+              of NLP techniques, using word embeddings, vector databases, and
+              advanced frameworks to deliver prompt and intelligible answers. By
+              integrating cutting-edge technologies such as Langchain framework
+              and OpenAI LLMs, this chatbot makes sure that users receive
+              relevant and summarized information from an extensive repository
+              of medical knowledge.
+            </p>
+          </div>
+          <img class="flex-item" src="/static/images/bot.jpeg" alt="Image 2" />
+        </div>
+        <div class="carousel-slide mulitple-images">
+          <div class="flex-item description">
+            <h2>Appointment booking system and Web Chat Consultation</h2>
+            <p>
+              The Appointment Booking System and Web Chat Consultation feature
+              of HealthAI Connect revolutionizes the way patients and doctors
+              interact, making scheduling appointments and conducting
+              consultations seamless and efficient. The core components include
+              patient and doctor dashboards, appointment booking forms,
+              appointment tables, and a web chat interface all of which
+              facilitate easy appointment booking and management, and enhance
+              doctor-patient interaction. The patient dashboard enables users to
+              schedule appointments conveniently through a simple form, while
+              the doctor dashboard provides a platform for managing appointment
+              requests and viewing upcoming sessions. By using technologies such
+              as WebSockets and SQL Lite database, the web chat interface
+              facilitates real-time communication between patients and doctors,
+              aiming to enhance communication and accessibility for both
+              patients and doctors.
+            </p>
+          </div>
+          <div class="flex-item image-container">
+            <img src="/static/images/pat.jpeg" alt="Image 2" />
+            <img src="/static/images/doc.jpeg" alt="Image 2" />
+            <img src="/static/images/chat.jpeg" alt="Image 2" />
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="flex-item description">
+            <h2>Brain Tumor Detection</h2>
+            <p>
+              The Brain Tumor Detection is an important feature within HealthAI
+              Connect, empowering users to submit brain X-ray images to identify
+              concerning abnormalities. This advanced feature relies on a
+              Convolutional Neural Network (CNN), carefully trained and
+              optimized to analyse images and identify malignant tumors with a
+              remarkable accuracy of 98%.
+            </p>
+          </div>
+          <img
+            class="flex-item"
+            src="/static/images/brain.jpeg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="carousel-slide">
+          <div class="flex-item description">
+            <h2>Pneumonia Detection</h2>
+            <p>
+              Pneumonia Detection is a crucial feature within HealthAI Connect,
+              enabling users to upload chest X-ray images for the prediction of
+              pneumonia. This feature utilizes a Convolutional Neural Network
+              (CNN) model, which has been pre-trained on a large dataset of
+              images to accurately classify images as affected by pneumonia or
+              normal. The model achieves impressive performance metrics,
+              including a loss of 0.0845 and an accuracy of 97.95% on the
+              training data, and a validation loss of 0.7160 and accuracy of
+              90.87% on the validation data.
+            </p>
+          </div>
+          <img class="flex-item" src="/static/images/pne.jpeg" alt="Image 2" />
+        </div>
+        <div class="carousel-slide">
+          <div class="flex-item description">
+            <h2>AI-Nutritionist</h2>
+            <p>
+              Nutrivision is a cutting-edge feature that analyzes food images to
+              provide detailed nutritional information. Users can ask queries
+              about the food, and Nutrivision responds with accurate details,
+              empowering users to make informed dietary choices effortlessly.
+            </p>
+          </div>
+          <img
+            class="flex-item"
+            src="/static/images/nutri.jpeg"
+            alt="Image 2"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="testimonial">
+        <blockquote>
+          "HealthAI Connect has been a game-changer for me. The personalized
+          guidance and convenient online consultations have made managing my
+          health so much easier!"
+        </blockquote>
+        <cite>- Syed Rahmath</cite>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Reach out to us!</p>
+      <form action="submit.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" />
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2024 HealthAI Connect. All rights reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script></script>
+  </body>
+</html>

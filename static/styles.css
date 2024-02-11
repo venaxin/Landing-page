@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito-sans, sans-serif;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px 0;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+
+.header nav ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.header nav ul li a:hover {
+  color: #666;
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.advantage {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advantage h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.advantage p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.btn {
+  margin: 30px 0 0;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 40px 0 80px 0;
+}
+.testimonials h2 {
+  font-size: 36px;
+  padding: 0 0 20px 20px;
+  margin-bottom: 10px;
+}
+.testimonial {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial blockquote {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.testimonial cite {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.contact {
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact form button:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin-bottom: 20px;
+}
+
+.footer nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer nav ul li a:hover {
+  color: #ccc;
+}
+
+.features {
+  padding: 40px;
+}
+.carousel-container {
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.carousel-slide {
+  margin: 10px 0;
+  display: flex;
+  align-items: center; /* Align items vertically within the slide */
+}
+
+.flex-item {
+  flex: 1;
+  margin: 5px;
+}
+
+.description {
+  flex-basis: 100px;
+  align-items: center; /* Center the content vertically */
+}
+
+.carousel-slide img {
+  flex-basis: 400px; /* fixed width of the image */
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 800px; /* Set a maximum width for the image container */
+}
+
+.image-container img {
+  width: 120px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.image-container img:last-child {
+  width: 120px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
