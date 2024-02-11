@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HealthAI Connect</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
@@ -52,6 +59,7 @@
       <a href="#features" class="btn">Discover More</a>
     </section>
     <section class="features" id="features">
+      <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
       <div class="carousel-container">
         <div class="carousel-slide">
           <div class="flex-item description">
@@ -188,6 +196,8 @@
           />
         </div>
       </div>
+
+      <button id="nextBtn"><i class="fas fa-chevron-right"></i></button>
     </section>
     <section class="testimonials" id="testimonials">
       <h2>What Our Users Say</h2>
@@ -219,6 +229,35 @@
         </ul>
       </nav>
     </footer>
-    <script></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carouselContainer = document.querySelector(".carousel-container");
+        const prevButton = document.getElementById("prevBtn");
+        const nextButton = document.getElementById("nextBtn");
+
+        let currentIndex = 0;
+        const slideWidth =
+          carouselContainer.querySelector(".carousel-slide").offsetWidth;
+        const totalSlides = carouselContainer.children.length;
+
+        function slideToIndex(index) {
+          const offset = index * slideWidth;
+          carouselContainer.style.transform = `translateX(-${offset}px)`;
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % (totalSlides - 2);
+          slideToIndex(currentIndex);
+        }
+
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          slideToIndex(currentIndex);
+        }
+
+        nextButton.addEventListener("click", nextSlide);
+        prevButton.addEventListener("click", prevSlide);
+      });
+    </script>
   </body>
 </html>
