@@ -12,14 +12,25 @@ img {
 body {
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
-
+h2{
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 1.4rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* Header styles */
 .header {
   background-color: #f1f1f1;
   padding: 20px 0;
@@ -31,6 +42,7 @@ body {
   color: #333;
 }
 
+/* Navigation styles */
 .header nav ul {
   list-style: none;
   text-align: center;
@@ -53,6 +65,7 @@ body {
   color: #666;
 }
 
+/* Hero section styles */
 .hero {
   background-color: #f8f9fa;
   padding: 50px 20px;
@@ -67,6 +80,11 @@ body {
 .hero-content h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #6c757d;
 }
 
 .hero-content p {
@@ -246,7 +264,7 @@ body {
   transition: transform 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  height: max-content;
+  height: 1005px;
 }
 
 .carousel-slide .flex-item {
@@ -268,9 +286,9 @@ body {
 
 .carousel-slide img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
   border-radius: 10px;
+  margin-top: -20px;
 }
 
 .image-container img {
